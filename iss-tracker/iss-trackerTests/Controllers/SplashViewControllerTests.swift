@@ -9,23 +9,21 @@ import XCTest
 @testable import iss_tracker
 
 class SplashViewControllerTests: XCTestCase {
-
+    
     var splashViewController: SplashViewController!
-        
-    override func setUp() {
-        self.splashViewController = SplashViewController()
+    
+    override func setUpWithError() throws {
+        self.splashViewController = UIStoryboard(name: "Splash", bundle: nil).instantiateViewController(withIdentifier: "SplashViewController") as? SplashViewController
         guard let _ = splashViewController else {
             return XCTFail("Failed to instantiate SplashViewController")
         }
-        super.setUp()
     }
 
-    override func tearDown() {
+    override func tearDownWithError() throws {
         self.splashViewController = nil
-        super.tearDown()
     }
 
-    func navigateToFlightsList() throws {
+    func testNavigateToFlightsList() throws {
         let identifiers = self.getSeguesIdentifier()
         
         XCTAssertEqual(identifiers.count, 1, "Segue count should be one.")

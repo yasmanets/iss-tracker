@@ -9,18 +9,18 @@ import XCTest
 @testable import iss_tracker
 
 class StringExtensionTest: XCTestCase {
-
-    let text = "el parking"
-        
-    override func setUp() {
-        super.setUp()
+    
+    var text = ""
+    
+    override func setUpWithError() throws {
+        self.text = "elParking"
     }
 
-    override func tearDown() {
-        super.tearDown()
+    override func tearDownWithError() throws {
+        self.text = ""
     }
 
-    func capitalizeFirstLetter() throws {
+    func testCapitalizeFirstLetter() throws {
         let capitalizedText = self.text.capitalizingFirstLetter()
         
         XCTAssertTrue(capitalizedText == "ElParking", "Texts must match")

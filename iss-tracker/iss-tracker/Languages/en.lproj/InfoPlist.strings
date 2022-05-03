@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  iss-tracker
+
+  Created by Yaser El Dabete Arribas on 2/5/22.
+  
+*/
+
+NSLocationAlwaysUsageDescription = "ISS Tracker needs your location to get flights close to your location.";
+NSLocationWhenInUseUsageDescription = "ISS Tracker needs your location to get flights close to your location.";

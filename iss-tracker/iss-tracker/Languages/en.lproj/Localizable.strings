@@ -7,3 +7,13 @@
 */
 
 "app_name" = "ISS Tracker";
+"flight_list_navigation_title" = "Upcoming overflights";
+"you_are_in_label" = "You are in:";
+"flights_date_of" = "of";
+"flights_date_at" = "at";
+"flights_duration" = "For %@ minutes and %@ seconds";
+"flights_duration_seconds" = "seconds";
+"detail_navigation_title" = "Upcoming overflight";
+"detail_information_text" = "Until the overflight remain:";
+"datails_flight_duration" = "The overflight will last %@ minutes and %@ seconds";
+"detail_random_message_prefix" = "%@ is the number of seconds the overflight will last and in addition, %@";

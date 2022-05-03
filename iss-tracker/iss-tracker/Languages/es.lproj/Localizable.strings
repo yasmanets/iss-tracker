@@ -7,3 +7,13 @@
 */
 
 "app_name" = "Rastreador ISS";
+"flight_list_navigation_title" = "Próximos sobrevuelos";
+"you_are_in_label" = "Estás en:";
+"flights_date_of" = "de";
+"flights_date_at" = "a las";
+"flights_duration" = "Durante %@ minutos y %@ segundos";
+"flights_duration_seconds" = "segundos";
+"detail_navigation_title" = "Próximo sobrevuelo";
+"detail_information_text" = "Hasta el sobrevuelo quedan:";
+"datails_flight_duration" = "El sobrevuelo durará %@ minutos y %@ segundos";
+"detail_random_message_prefix" = "%@ son los segundos que durará el sobrevuelo y además, %@";

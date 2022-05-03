@@ -19,7 +19,7 @@ class FlightTableViewHeader: UITableViewCell {
     }
     
     private func setupInformationLabelText() {
-        self.informationLabel.text = R.string.localizable.flight_header_label()
+        self.informationLabel.text = R.string.localizable.you_are_in_label()
     }
     
 }

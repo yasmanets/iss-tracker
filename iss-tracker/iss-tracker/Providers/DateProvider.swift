@@ -8,6 +8,16 @@
 import Foundation
 
 class DateProvider {
+    
+    static func timestampToDate(timestamp: Double) -> Date {
+        let date = Date(timeIntervalSince1970: timestamp)
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = NSLocale.current
+        dateFormatter.dateFormat = "EEEE d MMMM yyyy HH:mm"
+        let stringifyDate = dateFormatter.string(from: date)
+        return dateFormatter.date(from: stringifyDate)!
+    }
+    
     static func timestampToSplitedDate(timestamp: Double) -> [String] {
         let date = Date(timeIntervalSince1970: timestamp)
         let dateFormatter = DateFormatter()

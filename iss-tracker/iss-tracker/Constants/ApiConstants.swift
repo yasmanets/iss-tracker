@@ -17,4 +17,9 @@ class ApiConstants {
     static let NUMBERS_BASE_URL = "http://numbersapi.com/"
 
     static let ISS_FLIGHTS_NUMBER = 10
+    
+    // ElParking coordinates
+    static let DEFAULT_LATITUDE     = 40.971230
+    static let DEFAULT_LONGITUDE    = -5.662340
+    static let DEFAULT_ADDRESS      = "C/ Rodríquez Fabrés, 21, Salamanca 37005, España"
 }
